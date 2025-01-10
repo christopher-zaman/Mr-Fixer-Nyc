@@ -1241,6 +1241,9 @@ section,
     font-size: 14px;
     margin: 0 0 10px 0;
   }
+  .header .logo h1 {
+    font-size: 22px;
+  }
 }
 
 .portfolio .portfolio-item {
