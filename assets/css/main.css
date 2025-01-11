@@ -1246,12 +1246,15 @@ section,
     font-size: 14px;
     margin: 0 0 10px 0;
   }
+  .sitename {
+    font-size: 16px !important;
+  }
   
 }
 @media only screen and (max-width: 390px) {
   /* Styles for screens up to 390px wide */
   .sitename {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 .portfolio .portfolio-item {
