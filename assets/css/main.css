@@ -480,6 +480,9 @@ h6 {
   background-color: var(--background-color);
   font-size: 14px;
   position: relative;
+
+  font-weight: 200;
+  font-size: large;
 }
 
 .footer .footer-top {
@@ -506,7 +509,8 @@ h6 {
 }
 
 .footer .footer-about p {
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: large;
   font-family: var(--heading-font);
 }
 
@@ -563,7 +567,8 @@ h6 {
 }
 
 .footer .footer-links ul a {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  /* color: color-mix(in srgb, var(--default-color), transparent 30%); */
+  color:#fff;
   display: inline-block;
   line-height: 1;
 }
