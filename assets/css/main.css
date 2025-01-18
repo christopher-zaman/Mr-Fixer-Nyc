@@ -473,9 +473,10 @@ h6 {
 }
 .electrical-background {
   background-image: url(../img/electrical.png)
-  
 }
-
+.footer-contact.pt-3 a {
+  letter-spacing: 0.09rem !important;
+}
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
