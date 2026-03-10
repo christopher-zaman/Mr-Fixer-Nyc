@@ -161,6 +161,105 @@
       </div>
 
     </section><!-- /Hero Section -->
+
+<!-- Services Strip -->
+<section class="services-strip py-4">
+  <button class="services-arrow left">
+  <i class="bi bi-chevron-left"></i>
+</button>
+  <div class="container">
+    <div class="services-strip-scroll">
+      <div class="row flex-nowrap flex-md-wrap justify-content-md-between g-3 text-center">
+
+        <div class="col-auto col-md service-strip-item">
+          <a href="services.html" class="text-decoration-none">
+            <div class="service-strip-icon">
+              <i class="bi bi-wrench-adjustable-circle"></i>
+            </div>
+            <span>Handyman</span>
+          </a>
+        </div>
+
+        <div class="col-auto col-md service-strip-item">
+          <a href="tv-installations.html" class="text-decoration-none">
+            <div class="service-strip-icon">
+              <i class="bi bi-tv"></i>
+            </div>
+            <span>TV Mounting</span>
+          </a>
+        </div>
+
+        <div class="col-auto col-md service-strip-item">
+          <a href="security-camera-installations.html" class="text-decoration-none">
+            <div class="service-strip-icon">
+              <i class="bi bi-camera-video"></i>
+            </div>
+            <span>Cameras</span>
+          </a>
+        </div>
+
+        <div class="col-auto col-md service-strip-item">
+          <a href="electrical-services.html" class="text-decoration-none">
+            <div class="service-strip-icon">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+            <span>Electrical</span>
+          </a>
+        </div>
+
+        <div class="col-auto col-md service-strip-item">
+          <a href="appliance-repairs.html" class="text-decoration-none">
+            <div class="service-strip-icon">
+              <i class="bi bi-gear"></i>
+            </div>
+            <span>Appliances</span>
+          </a>
+        </div>
+
+        <div class="col-auto col-md service-strip-item">
+          <a href="home-renovations.html" class="text-decoration-none">
+            <div class="service-strip-icon">
+              <i class="bi bi-hammer"></i>
+            </div>
+            <span>Remodeling</span>
+          </a>
+        </div>
+
+        <div class="col-auto col-md service-strip-item">
+          <a href="kitchen-remodeling.html" class="text-decoration-none">
+            <div class="service-strip-icon">
+              <i class="bi bi-house-door"></i>
+            </div>
+            <span>Kitchen</span>
+          </a>
+        </div>
+
+        <div class="col-auto col-md service-strip-item">
+          <a href="bathroom-remodeling.html" class="text-decoration-none">
+            <div class="service-strip-icon">
+              <i class="bi bi-droplet-half"></i>
+            </div>
+            <span>Bathroom</span>
+          </a>
+        </div>
+
+        <div class="col-auto col-md service-strip-item">
+          <a href="contact.html" class="text-decoration-none">
+            <div class="service-strip-icon">
+              <i class="bi bi-tools"></i>
+            </div>
+            <span>More Services</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <button class="services-arrow right">
+  <i class="bi bi-chevron-right"></i>
+</button>
+</section>
+
 <!-- =======================================================
 
   * About Section*
@@ -634,6 +733,15 @@
   <script src="assets/js/main.js"></script>
   <script async defer src="https://www.instagram.com/embed.js"></script>
 
+  <script>
+  const strip = document.querySelector(".services-strip-scroll");
+  document.querySelector(".services-arrow.left").onclick = () => {
+    strip.scrollBy({ left: -300, behavior: "smooth" });
+  };
+  document.querySelector(".services-arrow.right").onclick = () => {
+    strip.scrollBy({ left: 300, behavior: "smooth" });
+};
+</script>
 </body>
 
 </html>

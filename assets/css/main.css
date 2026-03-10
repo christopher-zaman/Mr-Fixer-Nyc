@@ -477,6 +477,118 @@ h6 {
 .footer-contact.pt-3 a {
   letter-spacing: 0.09rem !important;
 }
+
+.services-strip {
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+  border-bottom: 1px solid #e9ecef;
+  position: relative;
+}
+
+.services-strip::before,
+.services-strip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 30px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.services-strip-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-snap-type: x mandatory;
+}
+
+.services-strip-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.service-strip-item {
+  min-width: 110px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+}
+
+.service-strip-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #222;
+  font-weight: 500;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.service-strip-item a:hover {
+  color: #47ab44;
+  transform: translateY(-2px);
+}
+
+.service-strip-icon {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  font-size: 1.6rem;
+  color: #e74c3c;
+}
+
+.service-strip-item span {
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+  .service-strip-item {
+    min-width: 120px;
+  }
+
+  .service-strip {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.services-strip {
+  position: relative;
+}
+
+.services-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  border: none;
+  background: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+
+.services-arrow.left {
+  left: 5px;
+}
+
+.services-arrow.right {
+  right: 5px;
+}
+
+.services-arrow i {
+  font-size: 18px;
+}
 /*--------------------------------------------------------------
 # Global Footer
 --------------------------------------------------------------*/
