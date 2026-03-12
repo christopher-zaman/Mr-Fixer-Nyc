@@ -60,6 +60,19 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
+          <!--Start of Housecallpro Online booking button--> 
+           <li class="nav-book-btn">
+            <button
+              data-token="0e6d5885860b475ebb1f92cb450b9424"
+              data-orgname="Mr-Fixer-NYC"
+              class="hcp-button"
+              onclick="HCPWidget.openModal()"
+              type="button"
+            >
+              Book Online
+            </button>
+          </li>
+      <!--End of Housecallpro Online booking button-->
           <!-- <li><a href="#hero" class="active">Home</a></li> -->
           <li class="dropdown"><a href="about.html"><span>About</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -274,6 +287,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Housecall Pro -->
+<script async src="https://online-booking.housecallpro.com/script.js?token=0e6d5885860b475ebb1f92cb450b9424&orgName=Mr-Fixer-NYC"></script>
 
 </body>
 
